@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>commande</title>
+</head>
+<body>
+  <style>
+    label{
+      display: inline-block;
+      width: 150px;
+    }
+  </style>
+  <h1>Techno Store - Commande</h1>
+  <h2>Information client</h2>
+  <form action="confirmation.html">
+    <div>
+      <label for="">Nom & Prénom</label>
+      <input type="text" name="nom" id="nom">
+    </div>
+    <div>
+      <label for="">Date de naissance</label>
+      <input type="date" name="date" id="date">
+    </div>
+    <div>
+      <label for="">email</label>
+      <input type="email" name="email" id="email">
+    </div>
+    <div>
+      <label for="">Téléphone</label>
+      <input type="phone" name="phone" id="phone">
+    </div>
+    <div>
+      <label for="">Adresse</label>
+      <textarea name="adresse" id="adresse"></textarea>
+    </div>
+    <h1>Information compte</h1>
+    <div>
+      <label for="">Pseudo-nom</label>
+      <input type="text" name="pseudo" id="pseudo">
+    </div>
+    <div>
+      <label for="">Mot de passe </label>
+      <input type="password">
+
+    </div>
+    <div>
+      <label for="">Confirmation</label>
+      <input type="password">
+      <h2>Information commande</h2>
+      <div>
+        <label for="">Article</label>
+        <select name="article" id="article">
+          <option value="lenovo">lenovo</option>
+          <option value="dell">dell</option>
+          <option value="hp">hp</option>
+          <option value="msi">msi</option>
+        </select>
+      </div>
+      <div>
+        <label for="">Quantité</label>
+        <input type="number" name="quantite" id="quantite" min="1" max="100" value="1">
+      </div>
+      <h2>Information paiement</h2>
+      <div>
+        <label for="">Type de paiement</label>
+        <input type="radio" name="paiement" value="carte bancaire">
+        <label for="">Carte bancaire</label>
+        <input type="radio" name="paiement" value="virement bancaire">
+        <label for="">Virement bancaire</label>
+        <input type="radio" name="paiement" value="comptant à la livraison">
+        <label for="">Comptant à la livraison</label>
+      </div>
+      <p>Les articles vendus ne peuvent être ni retournés, ni échangé sauf défaut d'usine</p>
+      <div>
+        <input type="checkbox" name="condition" value="ok">
+        <label for="">J'ai lu et j'accepte les termes de contrat de vente</label>
+      </div>
+      <div>
+        <input type="submit" value="commander">
+        <input type="reset" value="effacer">
+      </div>
+      <p><a href="index.html">← Page principale</a></p>
+    </div>
+
+
+
+   
+
+
+  </form>
+</body>
+</html>
+
+
+
